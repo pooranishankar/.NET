@@ -1,0 +1,101 @@
+{
+  "version": "0.1",
+  "toolInfo": {
+    "toolName": "Microsoft (R) Visual C# Compiler",
+    "productVersion": "1.0.0",
+    "fileVersion": "1.0.0"
+  },
+  "issues": [
+    {
+      "ruleId": "S1118",
+      "locations": [
+        {
+          "analysisTarget": [
+            {
+              "uri": "C:\Users\annapoorani.krishna\.jenkins\workspace\.NET\SampleConsole\SampleConsole\Program.cs",
+              "region": {
+                "startLine": 8,
+                "startColumn": 10,
+                "endLine": 8,
+                "endColumn": 17
+              }
+            }
+          ]
+        }
+      ],
+      "shortMessage": "Add a "protected" constructor or the "static" keyword to the class declaration.",
+      "fullMessage": "Utility classes, which are collections of static members, are not meant to be instantiated. Even abstract utility classes, which can be extended, should not have public constructors.",
+      "properties": {
+        "severity": "Warning",
+        "warningLevel": "1",
+        "defaultSeverity": "Warning",
+        "title": "Utility classes should not have public constructors",
+        "category": "Sonar Code Smell",
+        "helpLink": "http://vs.sonarlint.org/rules/index.html#version=1.22.0.1631&ruleId=S1118",
+        "isEnabledByDefault": "True"
+      }
+    },
+    {
+      "ruleId": "S1186",
+      "locations": [
+        {
+          "analysisTarget": [
+            {
+              "uri": "C:\Users\annapoorani.krishna\.jenkins\workspace\.NET\SampleConsole\SampleConsole\Program.cs",
+              "region": {
+                "startLine": 10,
+                "startColumn": 20,
+                "endLine": 10,
+                "endColumn": 24
+              }
+            }
+          ]
+        }
+      ],
+      "shortMessage": "Add a nested comment explaining why this method is empty, throw a "NotSupportedException" or complete the implementation.",
+      "fullMessage": "There are several reasons for a method not to have a method body:",
+      "properties": {
+        "severity": "Warning",
+        "warningLevel": "1",
+        "defaultSeverity": "Warning",
+        "title": "Methods should not be empty",
+        "category": "Sonar Code Smell",
+        "helpLink": "http://vs.sonarlint.org/rules/index.html#version=1.22.0.1631&ruleId=S1186",
+        "isEnabledByDefault": "True"
+      }
+    },
+    {
+      "ruleId": "S1172",
+      "locations": [
+        {
+          "analysisTarget": [
+            {
+              "uri": "C:\Users\annapoorani.krishna\.jenkins\workspace\.NET\SampleConsole\SampleConsole\Program.cs",
+              "region": {
+                "startLine": 10,
+                "startColumn": 25,
+                "endLine": 10,
+                "endColumn": 38
+              }
+            }
+          ]
+        }
+      ],
+      "shortMessage": "Remove this unused method parameter "args".",
+      "fullMessage": "Unused parameters are misleading. Whatever the value passed to such parameters is, the behavior will be the same.",
+      "properties": {
+        "severity": "Warning",
+        "warningLevel": "1",
+        "defaultSeverity": "Warning",
+        "title": "Unused method parameters should be removed",
+        "category": "Sonar Code Smell",
+        "helpLink": "http://vs.sonarlint.org/rules/index.html#version=1.22.0.1631&ruleId=S1172",
+        "isEnabledByDefault": "True",
+        "customTags": "Unnecessary",
+        "customProperties": {
+          "IsRemovable": "True"
+        }
+      }
+    }
+  ]
+}
